@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins"); 
+h1 {
+    color: maroon;
+}
+h2 {
+    color: slategray;
+}
+a { color:#0060B6;
+    text-decoration: none; 
+}
+a:hover, a:active { text-decoration: none; color:black }
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+.wrapper {
+    width: auto;
+    margin: 0 auto;
+    background-image: url(img/banner.png);
+}
+header {
+    height: 100px;
+    /* background:#500000; */
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+}
+.logo {
+    width: 30%;
+    float: none;
+    line-height: 100px;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+    letter-spacing: 5px;
+}
+nav {
+    float: auto;
+    line-height: 100px;
+}
+nav a {
+    text-decoration: none;
+    font-family: Corbel;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 50px;
+    color: white;
+}
+.banner-area {
+    width: auto;
+    height: 600px;
+    position: relative;
+    background-image: url(img/zachry.jpg);
+    /* background-attachment: fixed; */
+    top: 100px;
+    z-index: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.banner-area h2{
+    padding-top: 5%;
+    font-size: 90px;
+    letter-spacing: 20px;
+    font-family: 'Niagara Engraved';
+    text-transform: uppercase;
+    text-align: center;
+    color: white; 
+}
+.main {
+    width: auto;
+    height: 900px; 
+    position: relative;
+    z-index: 15;
+    top: 100px;
+    background: #dddddd; 
+}
+.main {
+    font-family: Corbel;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    font-size: 30px;
+    margin: 0;  
+}
+.grid {
+    display: grid;
+    height: auto;
+    width: inherit;
+    text-decoration: none;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, .3fr));
+    margin: 0;
+    /* align-items: normal; */
+}
+.grid-item {
+    background-color: white;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: .2s;  
+}
+.grid-item:hover {
+    transform: translateY(-.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .7);
+    background-image: url(img/zachry.jpg);
+
+}
+.card-img {
+    display: block; 
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.card-content{
+    padding: 3rem;
+    font-weight: 500;
+    color: #0d0d0d; 
+    margin-bottom: 1.5rem;
+}
+.card-text {
+    font-size: 1.6rem; 
+    letter-spacing: .1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+/* About Page */
+.about-head h2{
+    padding-top: 15%;
+    font-size: 90px;
+    letter-spacing: 20px;
+    font-family: 'Niagara Engraved';
+    text-transform: uppercase;
+    text-align: center;
+}
+.prof-pic{ 
+    clip-path: circle(); /* Make picture a circle*/
+}
+
+/* Resume Page */
+.res-head {
+    padding-top: 10%;
+    font-size: 90px;
+    letter-spacing: 20px;
+    font-family: 'Niagara Engraved';
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.res-pdf {
+    /* padding-top: 15%; */
+}
+
+/* Service Page */
+.serv-head {
+    padding-top: 10%;
+    font-size: 90px;
+    letter-spacing: 20px;
+    font-family: 'Niagara Engraved';
+    text-transform: uppercase;
+    text-align: center;
+    height: fit-content;
+}
+.serv-list {
+    float: left;
+    width: 50%;
+}
+.serv-list p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media only screen and (max-width: 10em) {
+    body {
+        padding: 0rem;
+    }
+    .grid {
+        grid-gap: 0rem;
+    }
+}
